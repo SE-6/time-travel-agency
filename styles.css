@@ -53,6 +53,10 @@ main {
 	transform: translateY(-5px);
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 	border-color: #ffcc00;
+	background-color: #ffffff;
+	transform: translateY(-5px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+	border-color: #ffcc00;
 }
 
 .gallery-grid {
@@ -87,6 +91,10 @@ label {
 
 button {
 	margin-top: 20px;
+}
+
+.dropdown {
+	display: none;
 }
 
 @media (max-width: 600px) {
@@ -174,5 +182,43 @@ button[type='submit']:hover {
 	#contact > form {
 		padding: 1rem;
 		margin: 0.5rem;
+	}
+
+	.service-container {
+		flex-direction: column;
+	}
+
+	.dropdown {
+		display: block;
+	}
+
+	.dropdown-content {
+		display: none;
+	}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+		position: absolute;
+		right: 1.5rem;
+		background-color: #123456;
+		border-radius: 5px;
+		padding: 0.5rem;
+		border: solid 1px #db924b;
+
+		ul {
+			list-style: none;
+		}
+
+		ul li {
+			margin: 0.5rem 0;
+		}
+
+		a {
+			text-decoration: none;
+		}
+	}
+
+	.desktop-nav {
+		display: none;
 	}
 }
