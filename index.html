@@ -1,87 +1,111 @@
 <!doctype html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Time Travel Agency</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<!-- Let's pretend this is a bigger unsaved change -->
+		<header>
+			<h1>Time Travel Agency</h1>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				fill="currentColor"
+				viewBox="0 0 24 24"
+			>
+				<!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+				<path
+					d="M20 4h-8.59L10 2.59C9.62 2.21 9.12 2 8.59 2H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 14H4V6h16z"
+				></path>
+				<path d="M8 11h8v2H8z"></path>
+			</svg>
+			<nav>
+				<a href="#services">Services</a>
+				<a href="#gallery">Gallery</a>
+				<a href="#contact">Contact</a>
+				<a href="past.html">Past Travels</a>
+				<a href="future.html">Future Travels</a>
+			</nav>
+		</header>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Time Travel Agency</title>
-	<link rel="stylesheet" href="styles.css" />
-</head>
-
-<body>
-	<header>
-		<h1>Time Travel Agency</h1>
-		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-			<!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-			<path
-				d="M20 4h-8.59L10 2.59C9.62 2.21 9.12 2 8.59 2H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 14H4V6h16z">
-			</path>
-			<path d="M8 11h8v2H8z"></path>
-		</svg>
-		<nav>
-			<a href="#services">Services</a>
-			<a href="#gallery">Gallery</a>
-			<a href="#contact">Contact</a>
-		</nav>
-	</header>
-
-	<main>
-		<section id="services">
-			<h2>Our Services</h2>
-			<div class="service-container">
-				<div class="service">
-					<h3>Past Travels</h3>
-					<p>Experience the dinosaurs or witness ancient Rome.</p>
+		<main>
+			<section id="services">
+				<h2>Our Services</h2>
+				<div class="service-container">
+					<div class="service">
+						<h3><a href="past.html">Past Travels</a></h3>
+						<p>Experience the dinosaurs or witness ancient Rome.</p>
+					</div>
+					<div class="service">
+						<h3><a href="future.html">Future Exploration</a></h3>
+						<p>See the future of Earth or explore life on Mars.</p>
+					</div>
 				</div>
-				<div class="service">
-					<h3>Future Exploration</h3>
-					<p>See the future of Earth or explore life on Mars.</p>
+			</section>
+			<section id="gallery">
+				<h2>Travel Destinations</h2>
+				<div class="gallery-grid">
+					<img
+						src="https://picsum.photos/200/300?random=1"
+						alt="Random Image 1"
+					/>
+					<img
+						src="https://picsum.photos/200/300?random=2"
+						alt="Random Image 2"
+					/>
+					<img
+						src="https://picsum.photos/200/300?random=3"
+						alt="Random Image 3"
+					/>
+					<img
+						src="https://picsum.photos/200/300?random=4"
+						alt="Random Image 4"
+					/>
+					<img
+						src="https://picsum.photos/200/300?random=5"
+						alt="Random Image 5"
+					/>
+					<img
+						src="https://picsum.photos/200/300?random=6"
+						alt="Random Image 6"
+					/>
 				</div>
-			</div>
-		</section>
-		<section id="gallery">
-			<h2>Travel Destinations</h2>
-			<div class="gallery-grid">
-				<img src="https://picsum.photos/200/300?random=1" alt="Random Image 1" />
-				<img src="https://picsum.photos/200/300?random=2" alt="Random Image 2" />
-				<img src="https://picsum.photos/200/300?random=3" alt="Random Image 3" />
-				<img src="https://picsum.photos/200/300?random=4" alt="Random Image 4" />
-				<img src="https://picsum.photos/200/300?random=5" alt="Random Image 5" />
-				<img src="https://picsum.photos/200/300?random=6" alt="Random Image 6" />
-			</div>
-		</section>
-		<section id="contact">
-			<h2>Contact Us</h2>
-			<form>
-				<label>
-					<span>Name:</span>
-					<input type="text" />
-				</label>
+			</section>
+			<section id="contact">
+				<h2>Contact Us</h2>
+				<form>
+					<label>
+						<span>Name:</span>
+						<input type="text" />
+					</label>
 
-				<label>
-					<span>Email:</span>
-					<input type="email" />
-				</label>
+					<label>
+						<span>Email:</span>
+						<input type="email" />
+					</label>
 
-				<label>
-					<span>Message:</span>
-					<input type="text" />
-				</label>
+					<label>
+						<span>Message:</span>
+						<input type="text" />
+					</label>
 
-				<button>
-					<p>Submit</p>
-				</button>
-			</form>
-		</section>
-	</main>
+					<button>
+						<p>Submit</p>
+					</button>
+				</form>
+			</section>
+		</main>
 
-	<footer>
-		<p>© 2026 Time Travel Agency</p>
-		<nav>
-			<a href="#">Privacy</a>
-			<a href="#">Terms</a>
-		</nav>
-	</footer>
-</body>
-
+		<footer>
+			<p>© 2026 Time Travel Agency</p>
+			<nav>
+				<a href="#">Privacy</a>
+				<a href="#">Terms</a>
+			</nav>
+		</footer>
+	</body>
 </html>
