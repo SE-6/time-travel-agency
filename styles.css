@@ -71,3 +71,81 @@ main {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
+
+/* Contact form styles (matches existing site patterns) */
+#contact {
+	margin-top: 1.5rem;
+	max-width: 720px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#contact > form {
+	background-color: #fbfbfb;
+	padding: 1.25rem;
+	border-radius: 8px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+	border: 1px solid #eee;
+}
+
+.form-row {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0.9rem;
+}
+
+label[for] {
+	font-weight: 700;
+	margin-bottom: 0.35rem;
+	color: #123456;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+	padding: 0.6rem 0.75rem;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	font-size: 1rem;
+	font-family: inherit;
+	background: white;
+}
+
+textarea {
+	resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+	outline: none;
+	box-shadow: 0 0 0 4px rgba(18, 52, 86, 0.08);
+	border-color: #123456;
+}
+
+button[type="submit"] {
+	background-color: #123456;
+	color: white;
+	border: none;
+	padding: 0.7rem 1rem;
+	font-weight: 900;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+button[type="submit"]:hover {
+	background-color: #0f2f4a;
+}
+
+@media (max-width: 600px) {
+	.gallery-grid {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	#contact > form {
+		padding: 1rem;
+		margin: 0.5rem;
+	}
+}
