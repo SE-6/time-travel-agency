@@ -77,25 +77,53 @@
 			</section>
 			<section id="contact">
 				<h2>Contact Us</h2>
-				<form>
-					<label>
-						<span>Name:</span>
-						<input type="text" />
-					</label>
-
-					<label>
-						<span>Email:</span>
-						<input type="email" />
-					</label>
-
-					<label>
-						<span>Message:</span>
-						<input type="text" />
-					</label>
-
-					<button>
-						<p>Submit</p>
-					</button>
+				<form id="contact-form">
+					<div class="form-row">
+						<label for="name">Name</label>
+						<input
+							id="name"
+							name="name"
+							type="text"
+							placeholder="Your full name"
+							required
+						/>
+					</div>
+					<div class="form-row">
+						<label for="email">Email</label>
+						<input
+							id="email"
+							name="email"
+							type="email"
+							placeholder="you@example.com"
+							required
+						/>
+					</div>
+					<div class="form-row">
+						<label for="destination">Destination</label>
+						<select id="destination" name="destination" required>
+							<option value="">Choose a destination</option>
+							<option value="ancient-rome">Ancient Rome</option>
+							<option value="jurassic-era">Jurassic Era</option>
+							<option value="martian-colony">Martian Colony 2080</option>
+						</select>
+					</div>
+					<div class="form-row">
+						<label for="travel-date">Preferred Travel Date</label>
+						<input id="travel-date" name="travel_date" type="date" />
+					</div>
+					<div class="form-row">
+						<label for="message">Message</label>
+						<textarea
+							id="message"
+							name="message"
+							rows="5"
+							placeholder="Tell us about your trip"
+							required
+						></textarea>
+					</div>
+					<div class="form-row">
+						<button type="submit">Send Message</button>
+					</div>
 				</form>
 			</section>
 		</main>
