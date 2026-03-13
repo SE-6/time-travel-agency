@@ -48,6 +48,13 @@ main {
 	text-align: center;
 }
 
+.service:hover {
+	background-color: #ffffff;
+	transform: translateY(-5px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+	border-color: #ffcc00;
+}
+
 .gallery-grid {
 	display: grid;
 	/* grid-template-columns: 1fr 1fr 1fr; */
@@ -60,6 +67,26 @@ main {
 	width: 100%;
 	height: 100%;
 	border-radius: 8px;
+}
+
+#contact {
+	border: 1px solid black;
+	padding: 20px;
+	width: 300px;
+	margin-top: 10px;
+}
+
+form {
+	margin-top: 20px;
+}
+
+label {
+	display: block;
+	margin-top: 10px;
+}
+
+button {
+	margin-top: 20px;
 }
 
 @media (max-width: 600px) {
@@ -100,9 +127,9 @@ label[for] {
 	color: #123456;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="date"],
+input[type='text'],
+input[type='email'],
+input[type='date'],
 select,
 textarea {
 	padding: 0.6rem 0.75rem;
@@ -125,7 +152,7 @@ textarea:focus {
 	border-color: #123456;
 }
 
-button[type="submit"] {
+button[type='submit'] {
 	background-color: #123456;
 	color: white;
 	border: none;
@@ -135,7 +162,7 @@ button[type="submit"] {
 	cursor: pointer;
 }
 
-button[type="submit"]:hover {
+button[type='submit']:hover {
 	background-color: #0f2f4a;
 }
 
