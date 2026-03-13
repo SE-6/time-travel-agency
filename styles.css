@@ -48,6 +48,13 @@ main {
 	text-align: center;
 }
 
+.service:hover {
+    background-color: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: #ffcc00;
+}
+
 .gallery-grid {
 	display: grid;
 	/* grid-template-columns: 1fr 1fr 1fr; */
@@ -60,6 +67,27 @@ main {
 	width: 100%;
 	height: 100%;
 	border-radius: 8px;
+}
+
+#contact {
+	border: 1px solid black;
+	padding: 20px;
+	width: 300px;
+	margin-top: 10px;
+}
+
+form {
+	margin-top: 20px;
+}
+
+
+label {
+	display: block;
+	margin-top: 10px;
+}
+
+button {
+	margin-top: 20px;
 }
 
 @media (max-width: 600px) {
